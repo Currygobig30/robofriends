@@ -2,6 +2,12 @@ import React from 'react';
 import Card from '../components/Card'
 
 const CardList = ({ wholelist }) => {
+
+    // test error boundary
+    // if (true) {
+    //     throw new Error('Something is wrong...fix it!')
+    // }
+
     return (
         <div>
             {

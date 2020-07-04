@@ -3,8 +3,8 @@ import CardList from '../components/CardList'
 // import { friends } from './friends_list.js'
 import SearchBox from '../components/SearchBox'
 import './App.css'
-import Scroll from '../components/Scroll.js'
-import ErrorBoundary from '../components/ErrorBoundary.js'
+import Scroll from '../components/Scroll'
+import ErrorBoundary from '../components/ErrorBoundary'
 
 
 class App extends Component {
@@ -35,7 +35,7 @@ class App extends Component {
         return (!wholelist.length) ? <h2>Loading</h2> : (
             <div className="tc">
                 <h1>RoboFriends</h1>
-                <div class="search_box">
+                <div className="search_box">
                     <SearchBox searchChange={this.searchChange} />
                 </div>
                 <Scroll>

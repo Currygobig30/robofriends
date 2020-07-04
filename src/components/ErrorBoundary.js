@@ -8,6 +8,7 @@ class ErrorBoundary extends Component {
         }
     }
 
+    // how do we change the value for hasError?? --- componentDidCatch, which is a life cycle element.
     componentDidCatch(error, info) {
         this.setState({ hasError: true });
     }
@@ -16,6 +17,7 @@ class ErrorBoundary extends Component {
         if (this.state.hasError) {
             return <h1>Oops!</h1>
         }
+        return this.props.children;
     }
 }
 
