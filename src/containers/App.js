@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import CardList from '../components/CardList'
 // import { friends } from './friends_list.js'
-import SearchBox from '../components/SearchBox'
-import './App.css'
-import Scroll from '../components/Scroll'
-import ErrorBoundary from '../components/ErrorBoundary'
+import SearchBox from '../components/SearchBox';
+import './App.css';
+import ScrollBox from '../components/ScrollBox';
+import ErrorBoundary from '../components/ErrorBoundary';
 
 
 class App extends Component {
@@ -38,11 +38,11 @@ class App extends Component {
                 <div className="search_box">
                     <SearchBox searchChange={this.searchChange} />
                 </div>
-                <Scroll>
+                <ScrollBox>
                     <ErrorBoundary>
                         <CardList wholelist={filteredFriends} />
                     </ErrorBoundary>
-                </Scroll>
+                </ScrollBox>
             </div>
         )
     }
